@@ -1,0 +1,65 @@
+.hero {
+  background: url(../assets/bg.png) no-repeat;
+  background-size: cover;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-block {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-title.mobile{
+  display: none;
+}
+
+.hero-caption {
+  color: var(--color-static-white);
+  font-family: 'Ubuntu-L';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  display: flex;
+  width: 317px;
+  padding: 15px 40px;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  color: var(--color-static-white);
+  text-align: center;
+  font-family: 'Ubuntu-B';
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid var(--color-static-white);
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.hero-btn:hover{
+  background-color: var(--color-static-white40);
+}
+
+@media screen and (max-width: 900px) {
+  .hero-caption {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .hero-title {
+    display: none;
+  }
+  .hero-title.mobile {
+    display: block;
+  }
+}

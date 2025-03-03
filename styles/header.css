@@ -1,0 +1,131 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.logo-container,
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-title{
+  font-family: "Ubuntu-B";
+  font-size: 18px;
+  color: var(--color-blue);
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-btn {
+  position: absolute;
+  right: 8px;
+}
+
+.search-input {
+  width: 360px;
+  height: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: 'Ubuntu-L';
+  cursor: pointer;
+  outline: none;
+  border: 1px solid var(--color-gray);
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.search-input::placeholder {
+  font-family: 'Ubuntu-L';
+  font-size: 16px;
+}
+
+.search-input:focus {
+  outline: none;
+  border: none;
+  background-color: #D7DADD;
+  transform: scale(1.05);
+}
+
+.search-input:hover {
+  transform: scale(1.05);
+}
+
+.menu-link {
+  position: relative;
+  font-family: "Ubuntu-L";
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: var(--color-black);
+  transition: color 0.5s ease-in-out;
+}
+
+.menu-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+
+.menu-link.active:hover{
+  color: var(--color-black);
+  cursor: default;
+}
+
+.menu-link:hover::after,
+.menu-link.active::after {
+  width: 100%;
+}
+
+.menu-link:hover {
+  color: var(--color-black20);
+}
+
+.burger-btn, .logo-title {
+  display: none;
+}
+
+@media screen and (max-width: 1205px) {
+
+  .menu-link {
+    font-size: 18px;
+  }
+
+  .search-input {
+    width: 200px;
+    padding: 10px;
+  }
+
+}
+
+@media screen and (max-width: 920px) {
+
+  .header-menu, .search, .cart-btn{
+    display: none;
+  }
+
+  .burger-btn, .logo-title{
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .logo-title{
+    display: none;
+  }
+
+}
