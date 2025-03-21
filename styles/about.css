@@ -1,0 +1,97 @@
+.about-texts-container,
+.about-block,
+.about-facts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.about-text {
+  max-width: 800px;
+  text-align: justify;
+}
+
+.about-photo {
+  width: 400px;
+  height: 400px;
+}
+
+.about-text-photo {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about-facts {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.about-fact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 110px;
+  border-radius: 8px;
+  padding: 26px;
+  border: 1px solid var(--color-gray400);
+ 
+}
+
+.about-fact-text{
+  font-family: 'Ubuntu';
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 1274px) {
+
+  .about-texts-container,
+  .about-text-photo, .about-facts-container{
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 1230px) {
+
+  .about-facts {
+    grid-template-columns: repeat(2, 1fr);
+  }  
+
+}
+
+@media screen and (max-width: 960px) {
+
+  .about-photo {
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+
+  .about-text {
+    order: 2;
+  }
+
+  .about-text-photo {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+@media screen and (max-width: 590px) {
+
+  .about-facts {
+    grid-template-columns: repeat(1, 1fr);
+  }  
+
+}

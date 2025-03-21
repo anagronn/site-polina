@@ -1,0 +1,108 @@
+.reviews-heading {
+  margin-bottom: 50px;
+}
+
+.reviews-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.reviews-image {
+  position: relative;
+  width: 50%;
+}
+
+.reviews-slider {
+  width: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.reviews-slider-container {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.review {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-shrink: 0;
+}
+
+.review-photo {
+  width: 72px;
+  height: 72px;
+}
+
+.reviewer {
+  display: flex;
+  flex-direction: column;
+  max-width: 120px;
+}
+
+.review-text {
+  color: var(--color-gray900);
+  font-family: 'Ubuntu';
+  font-size: 16px;
+}
+
+.reviewer-name {
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.reviewer-city {
+  text-align: justify;
+}
+
+.slider-btns {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  gap: 50px;
+  z-index: 5;
+}
+
+.slider-btn {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-btn:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1300px) {
+
+  .reviews-slider {
+    width: 500px;
+  }
+
+  .review {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+
+  .reviews-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .reviews-image,
+  .reviews-slider,
+  .review {
+    width: 350px;
+  }
+}
