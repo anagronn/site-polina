@@ -1,0 +1,84 @@
+.footer {
+  background: var(--color-primary);
+}
+
+.footer-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-menu,
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.footer-title {
+  color: var(--color-static-white);
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footer-image {
+  width: 45px;
+  height: 45px;
+}
+
+.footer-contact {
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-link,
+.footer-contact {
+  color: var(--color-static-white60);
+  transition: color 0.5s ease-in-out;
+}
+
+
+.footer-contact:hover,
+.footer-link:hover {
+  color: var(--color-static-white);
+}
+
+
+.footer-span {
+  color: var(--color-static-white);
+}
+
+.socials>svg{
+  cursor: pointer;
+}
+
+.socials>svg g {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.socials>svg:hover g {
+  opacity: 1;
+}

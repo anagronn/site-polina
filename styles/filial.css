@@ -1,0 +1,48 @@
+.filial-block {
+  padding: 50px;
+}
+
+.filial-title {
+  margin-bottom: 30px;
+}
+
+.filials-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 45px 0;
+}
+
+.filial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 310px;
+  height: 290px;
+  background-color: var(--color-primary);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.filial-card:hover {
+  background-color: var(--color-dark-blue);
+}
+
+.filial-location {
+  color: var(--color-static-white60);
+}
+
+.modal-list-item,
+.modal-text {
+  font-size: 20px;
+  text-align: justify;
+}
+
+
+@media screen and (max-width: 740px) {
+  .filials-container {
+    justify-content: center;
+  }
+}
