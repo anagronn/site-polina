@@ -1,0 +1,96 @@
+.container {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.catalog-title{
+  margin-bottom: 20px;
+}
+
+#catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 450px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.product-title {
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+.product-code {
+  text-align: end;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.product-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.product-descr{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.product-property {
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.product-price{
+  font-weight: 800;
+}
+
+.card-btn{
+  background-color: var(--color-primary);
+  color: var(--color-static-white);
+  min-width: 200px;
+  max-width: 340px;
+  position: absolute;
+  align-self: center;
+  bottom: 30px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.card:hover .product-info {
+  opacity: 0;
+}
+
+.card:hover .card-btn {
+  opacity: 1;
+}
+
+@media screen and (max-width: 440px) {
+  .container {
+      padding: 20px 10px;
+  }
+}

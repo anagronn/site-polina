@@ -3,18 +3,26 @@
   margin-bottom: 60px;
 }
 
-.services-cards-container{
+.services-cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.services-title, .services-caption{
+.title {
+  text-align: start;
+}
+
+.caption2 {
   text-align: justify;
+}
+
+.services-title,
+.services-caption {
   margin-bottom: 35px;
 }
 
-.services-caption{
+.services-caption {
   font-size: 32px;
 }
 
@@ -39,24 +47,10 @@
 
 .service-btn {
   position: absolute;
-  cursor: pointer;
-  border: 1px solid var(--color-primary);
-  display: flex;
   width: 150px;
   height: 40px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  background-color: var(--color-static-white);
-  font-family: 'Ubuntu-B';
-  color: var(--color-primary);
-  font-size: 14px;
-  line-height: 44px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
   bottom: 10px;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 
 .service-info {
@@ -72,9 +66,9 @@
   transition: height 0.5s ease-in-out;
 }
 
-.service-btn:hover {
+.btn:hover {
   color: var(--color-dark-blue);
-  border-color: var(--color-dark-blue);;
+  border-color: var(--color-dark-blue);
 }
 
 #service1 {
@@ -98,7 +92,285 @@
 }
 
 @media screen and (max-width: 1060px) {
-  .services-cards-container{
+  .services-cards-container {
     justify-content: center;
+  }
+}
+
+.design-service-btn {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.design-block,
+.drilling-block {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.design-service,
+.equipment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px
+}
+
+.design-service-info,
+.design-services,
+.equipment-item-info,
+.drilling-equipment {
+  display: flex;
+  flex-direction: column;
+  gap: 30px
+}
+
+.design-service-info {
+  position: relative;
+  width: 40%;
+}
+
+.design-img,
+.drilling-img {
+  width: 60%;
+}
+
+.work-image {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.construction-block {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.examples {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.construction-slider {
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.construction-slider-container {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.work-example {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-btn {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  cursor: pointer;
+}
+
+.slider-btn.left {
+  left: 10%;
+}
+
+.slider-btn.right {
+  right: 10%;
+}
+
+.work-caption {
+  font-family: 'Ubuntu';
+  font-size: 25px;
+  text-align: center;
+}
+
+.work-examples {
+  max-width: 800px;
+}
+
+.drilling-btn {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.rent-block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.filter-block {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-select {
+  font-family: 'Ubuntu';
+  width: 200px;
+  outline: none;
+  padding: 10px;
+}
+
+.rent-block{
+  padding-bottom: 50px;
+}
+
+.rent-catalog {
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.rent-card {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.rent-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rent-card-title,
+.rent-card-caption {
+  text-align: start;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.rent-card-caption {
+  font-family: "Ubuntu-M";
+}
+
+.rent-card-image {
+  width: 250px;
+  height: 200px;
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  max-width: 400px;
+}
+
+.price-item {
+  display: flex;
+  min-width: 320px;
+  align-items: center;
+}
+
+.price-item-text,
+.value {
+  color: #1D1D1B;
+  font-family: "Ubuntu-L";
+}
+
+.value {
+  font-weight: 600;
+}
+
+.dots {
+  flex-grow: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+.btns-container{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1380px) {
+  .rent-card {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .rent-card {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .rent-catalog {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .rent-card{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .design-img,
+  .drilling-img {
+    display: none;
+  }
+
+  .design-service-info,
+  .equipment-item-info {
+    width: 100%;
+  }
+
+  .equipment-item-title {
+    text-align: center;
+  }
+
+  .design-services,
+  .drilling-equipment {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+  }
+
+  .construction-slider {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .drilling-equipment {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .filter-block{
+    justify-content: center;
+  }
+
+  .design-services {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .construction-slider {
+    max-width: 320px;
   }
 }

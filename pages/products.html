@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>БЕЛСЕЛЬЭЛЕКТРОСЕТЬСТРОЙ - Продукция</title>
     <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <link rel="stylesheet" href="../styles/catalog.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon">
@@ -51,7 +53,13 @@
     </svg>
   </header>
   <main>
-
+    <section class="catalog wrapper">
+      <div class="catalog-block container">
+        <h2 class="catalog-title title">Наша продукция</h2>
+        <div class="products-catalog" id="catalog">
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer wrapper">
     <div class="footer-block container">
@@ -96,5 +104,6 @@
       </div>
     </div>
   </footer>
+  <script src="../scripts/products-page/catalog-render.js"></script>
 </body>
 </html>

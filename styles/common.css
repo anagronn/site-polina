@@ -34,6 +34,11 @@
   src: url("../assets/fonts/Ubuntu/Ubuntu-Bold.ttf");
 }
 
+@font-face {
+  font-family: 'Ubuntu-M';
+  src: url("../assets/fonts/Ubuntu/Ubuntu-Medium.ttf");
+}
+
 :root {
   --color-primary: #7197CC;
   --color-blue: #0B56A6;
@@ -122,6 +127,23 @@ p,
   line-height: 25.6px;
 }
 
+.btn{
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--color-static-white);
+  font-family: 'Ubuntu-B';
+  color: var(--color-primary);
+  font-size: 14px;
+  padding: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: opacity 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -163,7 +185,7 @@ body.active {
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 440px) {
 
   .container {
     padding: 80px 30px;
@@ -171,6 +193,10 @@ body.active {
 
   h1 {
     font-size: 46px;
+  }
+
+  h2 {
+    font-size: 40px;
   }
 
 }

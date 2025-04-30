@@ -34,8 +34,26 @@ function createInputField(label) {
   let inputElement;
   if (label === "Email") {
     inputElement = `<input type="email" name="${label}" required>`;
-  } else if (label === "Вид транспорта" || label === "Город") {
-    inputElement = `<select name="${label}"><option>Выберите...</option></select>`;
+  } else if (label === "Вид техники") {
+    inputElement = `<select class="form-select" name="${label}">
+    <option>все виды</option>
+    <option>подъемник</option>
+    <option>самосвал</option>
+    <option>лебедка</option>
+    <option>кран</option>
+    <option>бурильно-крановая</option>
+    <option>экскаватор</option>
+    <option>трактор</option></select>`;
+  } else if (label === "Город") {
+    inputElement = `<select class="form-select" name="${label}">
+    <option>все города</option>
+    <option>Минск</option>
+    <option>Витебск</option>
+    <option>Гомель</option>
+    <option>Брест</option>
+    <option>Молодечно</option>
+    <option>Могилев</option>
+    <option>Гродно</option></select>`;
   } else if (label === "Срок эксплуатации") {
     inputElement = `<input type="number" name="${label}" required>`;
   } else if (label === "Документы") {

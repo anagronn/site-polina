@@ -115,6 +115,13 @@ textarea:hover {
 }
 
 
+.form-select{
+  font-family: 'Ubuntu';
+  outline: none;
+  padding: 10px;
+}
+
+
 #filial-modal{
   width: 560px;
   padding: 20px;
